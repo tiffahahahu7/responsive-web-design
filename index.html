@@ -5,10 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Tiffany Hu Portfolio Page project" />
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="styles.css" media="screen"/>
     <link
       rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v6.4.2/css/all.css" defer
+      href="https://use.fontawesome.com/releases/v6.4.2/css/all.css" media="screen" async
     />    
     <title>Portfolio Demo</title>
 </head>
@@ -29,7 +29,7 @@
     <section id="about">
       <picture>
         <source srcset="./images/me_in_forest.webp" type="image/webp">
-        <img class="about-image" src="./images/me_in_forest.jpg" alt="image of Tiffany in the forest">
+        <img class="about-image" src="./images/me_in_forest.jpg" alt="image of Tiffany in the forest" loading="lazy">
       </picture>      
       <div class="about-text">
       <h1>About Me</h1>
@@ -44,7 +44,7 @@
         <a href="https://www.freecodecamp.org/learn/2022/responsive-web-design/build-a-survey-form-project/build-a-survey-form" target="_blank">
           <picture>
             <source srcset="./images/Survey Form.webp" type="image/webp">
-            <img class="project-image" src="./images/Survey Form.png" alt="image of freeCodeCamp survey form">
+            <img class="project-image" src="./images/Survey Form.png" alt="image of freeCodeCamp survey form" loading="lazy">
           </picture>
           <figcaption class="project-text" aria-hidden="true"><span class="sign">&lt; </span>Survey Form<span class="sign"> &gt;</span></figcaption>
           </a>
@@ -53,7 +53,7 @@
         <a href="https://www.freecodecamp.org/learn/2022/responsive-web-design/build-a-tribute-page-project/build-a-tribute-page" target="_blank">
           <picture>
             <source srcset="./images/Tribute Page.webp" type="image/webp">
-            <img class="project-image" src="images/Tribute Page.png" alt="image of tribute page">
+            <img class="project-image" src="images/Tribute Page.png" alt="image of tribute page" loading="lazy">
           </picture>  
           <figcaption class="project-text" aria-hidden="true"><span class="sign">&lt; </span>Tribute Page<span class="sign"> &gt;</span></figcaption>
           </a>
@@ -62,7 +62,7 @@
         <a href="https://www.freecodecamp.org/learn/2022/responsive-web-design/build-a-technical-documentation-page-project/build-a-technical-documentation-page" target="_blank">  
           <picture>
             <source srcset="./images/Technical Documentation Page.webp" type="image/webp">
-            <img class="project-image" src="./images/Technical Documentation Page.png" alt="image of technical documentation page" >
+            <img class="project-image" src="./images/Technical Documentation Page.png" alt="image of technical documentation page" loading="lazy">
           </picture>  
           <figcaption class="project-text" aria-hidden="true"><span class="sign">&lt; </span>Technical Documentation Page<span class="sign"> &gt;</span></figcaption>
           </a>
@@ -71,7 +71,7 @@
         <a href="https://www.freecodecamp.org/learn/2022/responsive-web-design/build-a-product-landing-page-project/build-a-product-landing-page" target="_blank">  
           <picture>
             <source srcset="./images/Product Landing Page.webp" type="image/webp">
-            <img class="project-image" src="./images/Product Landing Page.png" alt="image of product landing page">
+            <img class="project-image" src="./images/Product Landing Page.png" alt="image of product landing page" loading="lazy">
           </picture>
           <figcaption class="project-text" aria-hidden="true"><span class="sign">&lt; </span>Product Landing Page<span class="sign"> &gt;</span></figcaption>
           </a>
@@ -86,7 +86,7 @@
         <a id="profile-link" href="https://www.freecodecamp.org/TiffanyHu" target="_blank"><i class="fa-brands fa-free-code-camp social-icon"></i><span class="social-text"><span class="sr-only">Go To</span>FreeCodeCamp</span></a>
       </div>
     </section>    
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" async></script>
+    <script src="script.js" async></script>
 </body>
 </html>
