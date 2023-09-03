@@ -8,226 +8,226 @@
     <noscript><link rel="stylesheet" href="styles.css"></noscript>
     <link rel="preload" href="https://use.fontawesome.com/releases/v6.4.2/css/all.css" as="style" onload="this.onload=null;this.rel='stylesheet'"/>
     <noscript><link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.4.2/css/all.css"/></noscript>
-    <style>
-:root{
-  --primary: #E8B558;
-  --secondary: #476699;
-  --light: #F6F6F5;
-  --dark: #2c2d2b;
-}
-body {
-  margin: 0;
-  box-sizing: border-box;
-  font-family: "Montserrat", sans-serif;
-  background-color: var(--primary);
-}
+    <style type="text/css">
+      :root{
+        --primary: #E8B558;
+        --secondary: #476699;
+        --light: #F6F6F5;
+        --dark: #2c2d2b;
+      }
+      body {
+        margin: 0;
+        box-sizing: border-box;
+        font-family: "Montserrat", sans-serif;
+        background-color: var(--primary);
+      }
 
-#navbar{
-  display: flex;
-  justify-content: flex-end;
-  position: sticky;
-  top: 0;
-  z-index: 100;
-  animation: fadeIn 4.5s ease-in-out;
-}  
+      #navbar{
+        display: flex;
+        justify-content: flex-end;
+        position: sticky;
+        top: 0;
+        z-index: 100;
+        animation: fadeIn 4.5s ease-in-out;
+      }  
 
-#navbar a{
-  color: var(--light);
-  margin: 1rem 0;
-  padding: 0.3rem 1rem;
-  text-decoration: none;
-  font-size: 1.2rem;
-}
+      #navbar a{
+        color: var(--light);
+        margin: 1rem 0;
+        padding: 0.3rem 1rem;
+        text-decoration: none;
+        font-size: 1.2rem;
+      }
 
-#navbar a:hover{
-  background-color: var(--secondary);
-}    
+      #navbar a:hover{
+        background-color: var(--secondary);
+      }    
 
-/* Pure CSS Split Screen Loader: credit to https://codepen.io/tutsplus/pen/abKPOMG */
+      /* Pure CSS Split Screen Loader: credit to https://codepen.io/tutsplus/pen/abKPOMG */
 
-#welcome-section {
-  width: 100%;
-  height: 100vh;
-  position: relative;
-}
+      #welcome-section {
+        width: 100%;
+        height: 100vh;
+        position: relative;
+      }
 
-.background-image {
-  width: 50%;
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  margin: auto;
-  background-image: url("https://images.unsplash.com/photo-1621936783604-addb61205ccc?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2940&q=80");
-  background-size: cover;
-}
+      .background-image {
+        width: 50%;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        margin: auto;
+        background-image: url("https://images.unsplash.com/photo-1621936783604-addb61205ccc?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2940&q=80");
+        background-size: cover;
+      }
 
-.split-screen {
-  width: 100%;
-  background-color: var(--dark);
-  position: absolute;
-  left: 0;
-  top: 0;
-  bottom: 0;
-  z-index: 2;
-  animation: 
-    reduceSize 1.5s 0.5s, 
-    moveRight 1.5s 3s;
-  animation-fill-mode: forwards;
-}
+      .split-screen {
+        width: 100%;
+        background-color: var(--dark);
+        position: absolute;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        z-index: 2;
+        animation: 
+          reduceSize 1.5s 0.5s, 
+          moveRight 1.5s 3s;
+        animation-fill-mode: forwards;
+      }
 
-.intro-text {
-  color: var(--light);
-  text-transform: uppercase;
-  position: absolute;
-  width: fit-content;
-  height: fit-content;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  margin: auto;
-  z-index: 4;
-  opacity: 0;
-  transform: translateY(100vh);
-  animation: 
-    fadeInUp 2s 0.5s, 
-    moveRight 1.5s 3s,
-    changeBackground 1.5s 3s;
-  animation-fill-mode: forwards;
-}
+      .intro-text {
+        color: var(--light);
+        text-transform: uppercase;
+        position: absolute;
+        width: fit-content;
+        height: fit-content;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        margin: auto;
+        z-index: 4;
+        opacity: 0;
+        transform: translateY(100vh);
+        animation: 
+          fadeInUp 2s 0.5s, 
+          moveRight 1.5s 3s,
+          changeBackground 1.5s 3s;
+        animation-fill-mode: forwards;
+      }
 
-.intro-text h1 {
-  font-size: 6vw;
-  margin: 0;
-}
+      .intro-text h1 {
+        font-size: 6vw;
+        margin: 0;
+      }
 
-.intro-text h2 {
-  font-size: 3.5vw;
-  margin: 0;
-}
-.intro-text .comma {
-  color: var(--dark);
-  padding-left: 0.5rem;
-  opacity: 1;
-  animation: fadeOut 0.5s forwards 2.5s;
-}
+      .intro-text h2 {
+        font-size: 3.5vw;
+        margin: 0;
+      }
+      .intro-text .comma {
+        color: var(--dark);
+        padding-left: 0.5rem;
+        opacity: 1;
+        animation: fadeOut 0.5s forwards 2.5s;
+      }
 
-#about{
-  scroll-margin-top: 2rem;
-  display: flex;
-  gap: 2rem;
-  padding: 5rem 2rem 5rem 0;
-  background-color: var(--dark);
-  color: var(--light);
-}
+      #about{
+        scroll-margin-top: 2rem;
+        display: flex;
+        gap: 2rem;
+        padding: 5rem 2rem 5rem 0;
+        background-color: var(--dark);
+        color: var(--light);
+      }
 
-.about-image{
-  max-width: 580px;
-  min-width: 280px;
-}
+      .about-image{
+        max-width: 580px;
+        min-width: 280px;
+      }
 
-.about-text h1{
-  font-weight: 700;
-  font-size: 2.5rem;
-}
+      .about-text h1{
+        font-weight: 700;
+        font-size: 2.5rem;
+      }
 
-#projects{
-  scroll-margin-top: 2rem;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
-  place-items: center;
-  column-gap: 3rem;
-  width: 100%;
-  text-align: center;
-  padding-bottom: 1rem;
-}
+      #projects{
+        scroll-margin-top: 2rem;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+        place-items: center;
+        column-gap: 3rem;
+        width: 100%;
+        text-align: center;
+        padding-bottom: 1rem;
+      }
 
-.project-tile a{
-  text-decoration: none;
-  color: var(--secondary);
-  font-weight: 500;
-}
+      .project-tile a{
+        text-decoration: none;
+        color: var(--secondary);
+        font-weight: 500;
+      }
 
-#projects h1 {
-  font-weight: 700;
-  grid-column: 1/-1;
-  color: var(--light);
-  padding-top: 1rem;
-  font-size: 2.5rem;
-}
+      #projects h1 {
+        font-weight: 700;
+        grid-column: 1/-1;
+        color: var(--light);
+        padding-top: 1rem;
+        font-size: 2.5rem;
+      }
 
-.project-image{
-  width: 100%;
-  object-fit: cover;
-}
+      .project-image{
+        width: 100%;
+        object-fit: cover;
+      }
 
-.project-text{
-  background-color: var(--light);
-  margin-top: -0.3rem;
-  padding: 0.5rem 0;
-}
+      .project-text{
+        background-color: var(--light);
+        margin-top: -0.3rem;
+        padding: 0.5rem 0;
+      }
 
-.sign{
-  opacity: 0;
-  font-weight: 600;
-  color: var(--primary);
-}
+      .sign{
+        opacity: 0;
+        font-weight: 600;
+        color: var(--primary);
+      }
 
-.project-tile:hover .sign{
-  opacity: 1;
-  transition: opacity 0.3s ease-in-out;
-}
+      .project-tile:hover .sign{
+        opacity: 1;
+        transition: opacity 0.3s ease-in-out;
+      }
 
-#contact{
-  background-color: var(--dark);
-  padding: 1rem 1rem 3rem;
-}
+      #contact{
+        background-color: var(--dark);
+        padding: 1rem 1rem 3rem;
+      }
 
-#contact h1 {
-  font-weight: 700;
-  color: var(--light);
-  font-size: 2.5rem;
-  text-align: center;
-  padding-bottom: 1rem;
-}
+      #contact h1 {
+        font-weight: 700;
+        color: var(--light);
+        font-size: 2.5rem;
+        text-align: center;
+        padding-bottom: 1rem;
+      }
 
-.social-icons{
-  display: flex;
-  justify-content: space-around;
-}
+      .social-icons{
+        display: flex;
+        justify-content: space-around;
+      }
 
-.social-icon{
-  font-size: 2.5rem;
-}
+      .social-icon{
+        font-size: 2.5rem;
+      }
 
-.social-icons a{
-  color: var(--light);
-  text-decoration: none;
-  display: flex;
-  align-items: center; 
-}
+      .social-icons a{
+        color: var(--light);
+        text-decoration: none;
+        display: flex;
+        align-items: center; 
+      }
 
-.social-icons a:hover{
-  color: var(--primary);
-}
+      .social-icons a:hover{
+        color: var(--primary);
+      }
 
-.social-text{
-  font-size: 1.5rem;
-  margin-left: 10px;
-}
+      .social-text{
+        font-size: 1.5rem;
+        margin-left: 10px;
+      }
 
-.sr-only{
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  padding: 0;
-  margin: -1px;
-  overflow: hidden;
-  clip: rect(0, 0, 0, 0);
-  white-space: nowrap;
-  border: 0;
-}
+      .sr-only{
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        padding: 0;
+        margin: -1px;
+        overflow: hidden;
+        clip: rect(0, 0, 0, 0);
+        white-space: nowrap;
+        border: 0;
+      }
     </style>
     <title>Tiffany Hu's Responsive Web Design Portfolio</title>
 </head>
